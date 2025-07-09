@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import TempBalance from "./Components/TempBalance";
+import Balance from "./Components/TempBalance";
 import ExpenseCard from "./Components/ExpenseCard";
 import Transactions from "./Components/Transactions";
 import Graph1 from "./Components/Graph1";  // Import the Graph component
@@ -35,7 +35,7 @@ function App() {
       <h1 className="app-header">Expense Tracker</h1>
       <div className="main-container">
         <div className="left-section">
-          <TempBalance transactions={transactions} />
+          <Balance transactions={transactions} />
           <ExpenseCard transactions={transactions} />
           <Graph1 transactions={transactions} /> {/* Added Graph */}
         </div>
