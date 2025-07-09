@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Balance from "./Components/Balance";
-import ExpenseCard from "./Components/ExpenseCard";
-import Transactions from "./Components/Transactions";
-import Graph1 from "./Components/Graph1";  // Import the Graph component
+import Balance from "./components/Balance";
+import ExpenseCard from "./components/ExpenseCard";
+import Transactions from "./components/Transactions";
+import Graph1 from "./components/Graph1";  // Import the Graph component
 
 function App() {
   const [transactions, setTransactions] = useState(() => {
