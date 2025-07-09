@@ -3,7 +3,7 @@ import "./App.css";
 import Balance from "./Components/Balance";
 import ExpenseCard from "./Components/ExpenseCard";
 import Transactions from "./Components/Transactions";
-import Graph from "./Components/Graph1";  // Import the Graph component
+import Graph1 from "./Components/Graph1";  // Import the Graph component
 
 function App() {
   const [transactions, setTransactions] = useState(() => {
@@ -37,7 +37,7 @@ function App() {
         <div className="left-section">
           <Balance transactions={transactions} />
           <ExpenseCard transactions={transactions} />
-          <Graph transactions={transactions} /> {/* Added Graph */}
+          <Graph1 transactions={transactions} /> {/* Added Graph */}
         </div>
         <div className="right-section">
           <Transactions transactions={transactions} setTransactions={setTransactions} />
