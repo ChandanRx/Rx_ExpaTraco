@@ -1,0 +1,56 @@
+.container {
+  padding: 20px;
+  background-color: #f0faff; /* Light blue background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.2); /* Green glow */
+  color: #006d5b; /* Dark green text */
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-container input[type="text"],
+.filter-container input[type="date"] {
+  padding: 10px;
+  flex: 1;
+  min-width: 200px;
+  background-color: #e6f7ff; /* Very light blue input background */
+  color: #006d5b; /* Dark green text */
+  border: 1px solid #00b894; /* Aqua green border */
+  border-radius: 6px;
+  outline: none;
+}
+
+.filter-container input[type="text"]::placeholder,
+.filter-container input[type="date"]::placeholder {
+  color: #66c2b4; /* Soft green placeholder */
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #ffffff; /* White table background */
+  color: #006d5b; /* Greenish text */
+}
+
+th {
+  background-color: #d0f0e8; /* Pale green header */
+  padding: 10px;
+  font-weight: bold;
+  color: #006d5b;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #a8e6cf; /* Light green divider */
+}

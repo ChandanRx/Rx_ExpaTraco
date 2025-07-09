@@ -1,0 +1,30 @@
+.balance-container {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #e0f7fa;
+  box-shadow: 0 2px 4px rgba(0, 128, 0, 0.15);
+  text-align: center;
+  margin: 10px 0;
+}
+
+.balance-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00695c;
+}
+
+.balance-amount {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00bfa5;
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .balance-text {
+    font-size: 16px;
+  }
+  .balance-amount {
+    font-size: 24px;
+  }
+}

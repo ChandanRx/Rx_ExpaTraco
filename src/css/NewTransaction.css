@@ -1,0 +1,47 @@
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #e0f7fa; /* Light blue background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.15); /* Soft green shadow */
+  gap: 20px;
+  color: #00695c; /* Deep green text */
+}
+.transaction-form input:focus,
+.transaction-form select:focus {
+  outline: 2px solid #00bfa5;
+  box-shadow: 0 0 4px rgba(0, 191, 165, 0.3);
+}
+
+.transaction-form h2 {
+  margin-top: 0;
+  color: #00796b; /* Green heading */
+}
+
+.row-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.transaction-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00bfa5; /* Green button */
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transaction-form button:hover {
+  background-color: #009e88; /* Darker green on hover */
+}
+
+@media (max-width: 600px) {
+  .row-container {
+    flex-direction: column;
+  }
+}
