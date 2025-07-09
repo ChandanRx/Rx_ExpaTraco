@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Balance from "./Components/TempBalance";
+import Balance from "./Components/Balance";
 import ExpenseCard from "./Components/ExpenseCard";
 import Transactions from "./Components/Transactions";
 import Graph1 from "./Components/Graph1";  // Import the Graph component
