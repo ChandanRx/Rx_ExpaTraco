@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/Balance.css";
 
-const Balance = ({ transactions }) => {
+const TempBalance = ({ transactions }) => {
   const amount = transactions
     .filter((t) => t && typeof t.amount === "number") // only valid transactions
     .map((transaction) => transaction.amount);
@@ -16,4 +16,4 @@ const Balance = ({ transactions }) => {
   );
 };
 
-export default Balance;
+export default TempBalance;
