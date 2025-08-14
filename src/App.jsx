@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="app-header">Expense Tracker</h1>
+      <h1 className="app-header">Rx_ExpaTraco</h1>
       <div className="main-container">
         <div className="left-section">
           <Balance transactions={transactions} />
