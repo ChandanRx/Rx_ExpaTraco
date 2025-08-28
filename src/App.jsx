@@ -4,6 +4,7 @@ import Balance from "./Components/Balance";
 import ExpenseCard from "./Components/ExpenseCard";
 import Transactions from "./Components/Transactions";
 import Graph from "./Components/Graph1";  // Import the Graph component
+import { DollarSign } from "lucide-react";
 
 function App() {
   const [transactions, setTransactions] = useState(() => {
@@ -12,12 +13,12 @@ function App() {
       const parsed = saved ? JSON.parse(saved) : [];
       return Array.isArray(parsed)
         ? parsed.filter(
-            (t) =>
-              t &&
-              typeof t.text === "string" &&
-              typeof t.amount === "number" &&
-              typeof t.date === "string"
-          )
+          (t) =>
+            t &&
+            typeof t.text === "string" &&
+            typeof t.amount === "number" &&
+            typeof t.date === "string"
+        )
         : [];
     } catch (e) {
       console.error("Invalid data in localStorage:", e);
@@ -32,12 +33,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="app-header">Expense Tracker</h1>
+      <div className="funky-title">
+        <DollarSign className="title-icon" />
+        <h1>Expense Tracker</h1>
+      </div>
       <div className="main-container">
         <div className="left-section">
           <Balance transactions={transactions} />
           <ExpenseCard transactions={transactions} />
-          <Graph transactions={transactions} /> {/* Added Graph */}
+          <Graph transactions={transactions} />
         </div>
         <div className="right-section">
           <Transactions transactions={transactions} setTransactions={setTransactions} />
