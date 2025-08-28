@@ -4,6 +4,7 @@ import Balance from "./Components/Balance";
 import ExpenseCard from "./Components/ExpenseCard";
 import Transactions from "./Components/Transactions";
 import Graph from "./Components/Graph1";  // Import the Graph component
+import { DollarSign } from "lucide-react";
 
 function App() {
   const [transactions, setTransactions] = useState(() => {
@@ -32,7 +33,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="app-header">Expense Tracker</h1>
+      <div className="funky-title">
+        <DollarSign className="title-icon" />
+        <h1>Expense Tracker</h1>
+      </div>
       <div className="main-container">
         <div className="left-section">
           <Balance transactions={transactions} />
