@@ -1,4 +1,4 @@
-# 💰 React Expense Tracker
+# 💰 Expensify
 
 A clean and modern Expense Tracker app built with React. It lets you:
 
