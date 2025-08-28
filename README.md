@@ -1,12 +1,34 @@
-# React + Vite
+# 💰 Expensify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and modern Expense Tracker app built with React. It lets you:
 
-Currently, two official plugins are available:
+- ➕ Add new income or expense transactions
+- 🗓️ Filter transactions by date or description
+- 📊 View real-time balance, income, and expenses
+- 💾 Persist data in `localStorage`
+- 🧹 Manage and delete transactions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Add transactions with type, amount, and date
+- ✅ Filter/search transactions
+- ✅ Delete transactions
+- ✅ Automatically calculates total balance, income & expenses
+- ✅ Mobile responsive and clean UI
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React (with Hooks)
+- 🎨 CSS (custom styled)
+- 💾 localStorage (for data persistence)
+
+---
+
+## 📸 Screenshot
+
+![screencapture-localhost-5173-2025-07-10-02_00_09](https://github.com/user-attachments/assets/0423c8dc-02da-49a8-8d16-48c6cb19c6a3)
+
